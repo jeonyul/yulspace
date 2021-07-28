@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<title>율이의 개발 노트</title>
+<meta charset="utf=8"> (이 본문이 utf-8로 저장되어 있다)
+</head>
+<body>
+<h1><a href="index.html">web</a></h1>
+<br>
+<ol>
+<li><a href="1.html">html</a></li>
+<br>
+<li><a href="2.html">css</a></li>
+<br>
+<li><a href="3.html">javascript</a></li>
+</ol>
+<br>
+<h2>html</h2>
+<h3>제목을 쓸 때는 h1~6 태그</h3>
+<h4>h1부터 h6까지 있는데 줄이 바뀜, 숫자가 커질수록 얇고 작아짐</h4>
+<strong><u>strong 태그(볼드)와 u 태그(밑줄)를 이용함 </u></strong>
+<br>
+<br>
+이건 br태그를 이용한 줄 바꿈, 그래서 이건 닫히는 태그가 필요 없음
+<p>이건 p태그(단락 표현)을 이용한 줄 바꿈, 그래서 이건 닫히는 태그 반드시 필요</p>
+<br>br 태그 같은 경우 한번에 여러번 사용하여 여백 사이즈 조절이 가능 하지만 p 태그 같은 경우 여백 사이즈 조절이 불가능하다 하지만 css언어를 통해 조절 가능하다
+<br>
+<br>
+<h1>속성</h1>
+<br>
+태그가 태그의 이름만으로 정보가 부족 할 때 사용, 순서 상관없음
+<br>
+이미지를 넣는 태그는 img src=""
+<br>
+이미지 저장 경로는 html 웹페이지 저장경로랑 같아야 한다
+<br>
+<br>ex.  img src="이미지 이름"
+<br>
+<img src="연습용_이미지.jpg" width=450>
+<br>
+with= 은 사이즈 조절
+<br>
+<br>
+<h1>부모자식태그</h1>
+<br>
+목차, 목록 (=list)
+<br>
+li 태그를 이용하여 목차 만들기
+<br>
+<br>
+    <li>음악</li>
+    <li>영상</li>
+    <li>개발</li>
+<br>
+li 태그의 부모태그인 ul 태그 등이 있음, 어디서부터 어디까지가 연관된 항목인지 구분하기 위한 태그
+<br>
+<ul>
+    <li>음악</li>
+    <li>영상</li>
+    <li>개발</li>
+</ul>
+<br>
+목차에 넘버링 넣으려면 ol 태그
+<ol>
+    <li>음악</li>
+    <li>영상</li>
+    <li>개발</li>
+</ol>
+<br>
+<br>
+내용이 많아지면 그것을 정리할 수 있는 체계나 구조가 필요
+<br>
+웹 페이지 제목을 바꿀 때는 첫 줄에 title 태그 (책으로 비유하면 책 제목)
+<br>
+<br>
+간혹 입력한 내용이 웹 페이지에서 오류가 뜨면 오른쪽 하단 인코딩(utf-8)설정과 웹페이지 설정이 안 맞아서 일 수 있다
+<br>
+웹페이지의 인코딩 설정 바꾸는 태그는 meta charset="utf=8" (=문서를 utf-8로 읽어라)
+<br>
+본문은 body라는 태그로 묶어야 함
+body를 설명하는 태그는 head태그로 묶어야 함
+<br>
+=html에 있는 모든 태그는 head 또는 body 태그 둥 중 하나에 놓이게 된다
+<br>
+또 이 모든 태그들을 감싸는 단 하나의 최고위층 태그는 html태그(맨 첫과 마지막에 작성)
+<br>
+하지만 관용적으로 가장 앞에는 !doctype html 태그 (=이 문서에는 html이 있다)
+</body>
+</html>
+<br><br>
+<a title="네이버 블로그" target="_blank" href="https://electronic-moongchi.tistory.com/87">a태그 - 링크</a>
+<br>
+a태그 쓰면서 href="링크 주소" 필수
+<br>
+hyper reference의 약자
+<br>
+새 탭으로 열게하고 싶으면 속성 target="_blank"을 추가
+<br>
+마우스를 링크 단어에 올렸을 때 제목을 보이고 싶을떄 속성 title="제목" 삽입
